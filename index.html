@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Jornadas de Aprendizado</title>
+    <style>
+        .bg-custom {
+            background-color: #d662ac; /* Rosa escuro */
+        }
+
+        .title-color {
+            color: #d662ac; /* Rosa escuro para títulos */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container text-center">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Jornadas de Aprendizado</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projetos</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#projeto1">Projeto 1</a></li>
+                                <li><a class="dropdown-item" href="#projeto2">Projeto 2</a></li>
+                                <li><a class="dropdown-item" href="#projeto3">Projeto 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <img src="Imagem do WhatsApp de 2024-10-19 à(s) 15.50.48_01a815c6.jpg" alt="Avatar do Estudante" class="rounded-circle d-block mx-auto" width="150" height="150">
+        <h1>Reflexões sobre Minha Trajetória</h1>
+        <p class="lead">Olá, meu nome é Heloisa Natalia Ramos, eu tenho 15 anos e estou no segundo ano do ensino médio. 
+            Nessa página você irá ver algumas memórias minhas, algumas mais antigas outras mais recentes e fotos também.</p>
+    </header>
+
+    <main class="container mt-5">
+        <div class="row text-center">
+            <!-- Projeto 1 -->
+            <div class="col-md-4 project-card" id="projeto1">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title title-color">Festa de Natal</h5> <!-- Adicionada classe title-color -->
+                        <div class="project-image" style="background-image: url('Imagem do WhatsApp de 2024-10-16 à(s) 18.59.07_d5e630c8.jpg');"></div>
+                        <p class="introduction">Uma lembrança de uma festa de Natal na antiga escola que mesmo meio vaga, marcou muito minha vida. Estar com pessoas que você ama fez aquele momento especial, e hoje, essa foto teria um significado enorme. É uma memória que vou sempre carregar comigo.</p>
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal1">Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Projeto 2 -->
+            <div class="col-md-4 project-card" id="projeto2">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title title-color">Passeio Escolar</h5> <!-- Adicionada classe title-color -->
+                        <div class="project-image" style="background-image: url('Imagem do WhatsApp de 2024-10-16 à(s) 19.08.57_12072d38.jpg');"></div>
+                        <p class="introduction">Em maio de 2023, fizemos um passeio para a Volvo e foi uma experiência super legal. No geral foi um passeio muito bacana, e todas nós curtimos bastante.</p>
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal2">Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Projeto 3 -->
+            <div class="col-md-4 project-card" id="projeto3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title title-color">Trabalho de Animação</h5> <!-- Adicionada classe title-color -->
+                        <div class="project-image" style="background-image: url('Imagem do WhatsApp de 2024-10-16 à(s) 19.12.19_6661ca10.jpg');"></div>
+                        <p class="introduction">Essa foto é de um trabalho que fizemos em Projeto de Vida este ano. Foi meio corrido e trabalhoso, e na hora de apresentar, eu e as meninas ficamos morrendo de vergonha por causa da nossa voz gravada. Mas, no final, todo mundo riu, e a tensão passou. Conseguimos a nota, então deu tudo certo!</p>
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal3">Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modais dos Projetos -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title title-color">Festa de Natal</h5> <!-- Adicionada classe title-color -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Foi uma memória antiga, na minha antiga escola que me contam e que eu lembro de algumas coisas, que essa festa de natal no colégio marcaria muito a minha vida, e essa foto hoje em dia seria muito importante para mim por estar perto de pessoas que eu amo muito, e sempre guardarei essa memória comigo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title title-color">Passeio Escolar</h5> <!-- Adicionada classe title-color -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Nesse passeio em maio de 2023 nós fomos à Volvo e foi uma experiência super legal, pois tivemos várias coisas para fazer e realmente no lugar era uma experiência boa, tivemos uma simulação de tombamento de caminhão e de um acidente de carro, entre outras coisas que tínhamos para olhar. Resumindo, foi legal e todas nós gostamos do passeio.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title title-color">Trabalho de Animação</h5> <!-- Adicionada classe title-color -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Essa foto foi de um trabalho que fizemos em projeto de vida esse ano mesmo, foi um pouco trabalhoso de fazer e também não tínhamos muito tempo, mas deu tudo certo. Na hora de apresentar, eu e as meninas morremos de vergonha, pois tinha nossa voz, mas no final todos da sala deram risada e passou e conseguimos nota.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="contactModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contato</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Fale comigo para mais informações!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container py-5 text-center">
+        <p>Heloisa Natalia Ramos - 2 C</p>
+    </footer>
+
+    <a href="#" id="backToTop" class="btn btn-secondary" style="display: none;">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Mostrar o botão de voltar ao topo ao rolar a página
+        window.onscroll = function () {
+            const backToTopButton = document.getElementById("backToTop");
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        };
+
+        // Rolagem suave ao clicar no botão de voltar ao topo
+        document.getElementById("backToTop").onclick = function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+    </script>
+</body>
+</html>
